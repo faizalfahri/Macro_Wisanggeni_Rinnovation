@@ -1,7 +1,7 @@
 import {Routes, Route} from "react-router-dom";
 
 import NavbarComponent from "./components/client/Navbar/NavbarComponent";
-// import FooterComponent from "./components/client/Footer/FooterComponent";
+import FooterComponent from "./components/client/Footer/FooterComponent";
 
 import HomePage from "./pages/HomePage"
 import ArticlePage from "./pages/ArticlePage"
@@ -19,7 +19,7 @@ function App() {
         <Route path="/findpro" Component={FindProPage}></Route>
       </Routes>
 
-      {/* <FooterComponent /> */}
+      <FooterComponent />
     </div>
   );
 }
