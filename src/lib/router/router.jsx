@@ -6,6 +6,7 @@ import FindProPage from "../../pages/FindProPage";
 import HomePage from "../../pages/HomePage";
 import PopularDesignPage from "../../pages/PopularDesignPage";
 import Landing from "../../pages/pro/Landing";
+import SignIn from "../../pages/pro/SignIn";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
         element: <PopularDesignPage />,
       },
       {
-        index: "findpro",
+        path: "findpro",
         element: <FindProPage />,
       },
     ],
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+      },
+      {
+        path: "sign-in",
+        element: <SignIn />,
       },
     ],
   },
