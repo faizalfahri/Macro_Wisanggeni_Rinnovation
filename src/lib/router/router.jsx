@@ -5,6 +5,7 @@ import ArticlePage from "../../pages/ArticlePage";
 import FindProPage from "../../pages/FindProPage";
 import HomePage from "../../pages/HomePage";
 import PopularDesignPage from "../../pages/PopularDesignPage";
+import Landing from "../../pages/pro/Landing";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,12 @@ const router = createBrowserRouter([
   {
     path: "/pro",
     element: <ProLayout />,
+    children: [
+      {
+        index: true,
+        element: <Landing />,
+      },
+    ],
   },
 ]);
 
