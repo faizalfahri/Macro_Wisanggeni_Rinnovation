@@ -1,4 +1,5 @@
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, RouterProvider} from "react-router-dom";
+import router from "./lib/router";
 
 import NavbarComponent from "./components/client/Navbar/NavbarComponent";
 import FooterComponent from "./components/client/Footer/FooterComponent";
@@ -12,6 +13,7 @@ function App() {
     <div>
       <NavbarComponent />
 
+      <RouterProvider router={router} />;
       <Routes>
         <Route path="/" Component={HomePage}></Route>
         <Route path="/article" Component={ArticlePage}></Route>
@@ -24,4 +26,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
