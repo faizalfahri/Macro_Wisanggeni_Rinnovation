@@ -10,15 +10,29 @@ const Navbar = () => {
         </h2>
       </Link>
       <ul>
-        <li>
-          <Link to={"/"}>Back to Home</Link>
-        </li>
-        <li>
-          <Link to={"/sign-in"}>Sign In</Link>
-        </li>
-        <li class={style.outline}>
-          <Link to={"/sign-up"}>Join Us</Link>
-        </li>
+        {location.pathname !== "/dashboard" ? (
+          <>
+            <li>
+              <Link to={"/"}>Back to Home</Link>
+            </li>
+            {location.pathname !== "/pro/sign-in" ? (
+              <li>
+                <Link to={"/pro/sign-in"}>Sign In</Link>
+              </li>
+            ) : (
+              ""
+            )}
+            {location.pathname !== "/pro/sign-up" ? (
+              <li class={style.outline}>
+                <Link to={"/pro/sign-up"}>Join Us</Link>
+              </li>
+            ) : (
+              ""
+            )}
+          </>
+        ) : (
+          <li>SY Construction</li>
+        )}
       </ul>
     </nav>
   );
