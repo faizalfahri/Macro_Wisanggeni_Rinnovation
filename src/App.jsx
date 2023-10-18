@@ -1,5 +1,4 @@
-import {Routes, Route, RouterProvider} from "react-router-dom";
-import router from "./lib/router";
+import {Routes, Route} from "react-router-dom";
 
 import NavbarComponent from "./components/client/Navbar/NavbarComponent";
 import FooterComponent from "./components/client/Footer/FooterComponent";
@@ -13,7 +12,6 @@ function App() {
     <div>
       <NavbarComponent />
 
-      <RouterProvider router={router} />;
       <Routes>
         <Route path="/" Component={HomePage}></Route>
         <Route path="/article" Component={ArticlePage}></Route>
