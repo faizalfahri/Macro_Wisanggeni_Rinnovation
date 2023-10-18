@@ -1,0 +1,42 @@
+main {
+  height: 100vh;
+  background-image: url("./marcus-reubenstein-8mXAvhTwE7I-unsplash\ 1.png");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+  background-image: linear-gradient(to right, #a64b24 40%, transparent);
+}
+
+h1 {
+  color: white;
+}
+
+.title {
+  font-weight: 900;
+}
+.subtitle {
+  font-weight: 500;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+
+button span {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
