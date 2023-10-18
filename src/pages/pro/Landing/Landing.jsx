@@ -9,7 +9,7 @@ const Landing = () => {
         <h1 class={style.title}>Grow Your Bussiness</h1>
         <h1 class={style.subtitle}>Join us and increase your exposure</h1>
         <button>
-          <Link to="/sign-up">
+          <Link to="/pro/sign-up">
             Become Rinnovation<span>Partner</span>
           </Link>
         </button>
