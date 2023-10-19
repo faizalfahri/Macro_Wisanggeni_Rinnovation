@@ -8,11 +8,11 @@ const Landing = () => {
       <div className={style.container}>
         <h1 className={style.title}>Grow Your Bussiness</h1>
         <h1 className={style.subtitle}>Join us and increase your exposure</h1>
-        <button>
-          <Link to="/pro/sign-up">
+        <Link to="/pro/sign-up">
+          <button>
             Become Rinnovation<span>Partner</span>
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </main>
   );
