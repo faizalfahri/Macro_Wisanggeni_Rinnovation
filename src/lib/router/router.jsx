@@ -9,6 +9,7 @@ import MorePro from "../../pages/MorePro";
 import Dashboard from "../../pages/pro/Dashboard";
 import Landing from "../../pages/pro/Landing";
 import SignIn from "../../pages/pro/SignIn";
+import SignUp from "../../pages/pro/SignUp/SignUp";
 import ReadArticle from "../../pages/ReadArticle";
 import ReadDesign from "../../pages/ReadDesign";
 import ReadPro from "../../pages/ReadPro";
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
       {
         path: "sign-in",
         element: <SignIn />,
+      },
+      {
+        path: "sign-up",
+        element: <SignUp />,
       },
       {
         path: "dashboard",

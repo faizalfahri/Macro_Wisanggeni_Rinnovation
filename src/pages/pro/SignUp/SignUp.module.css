@@ -1,0 +1,70 @@
+.login__container {
+  display: flex;
+  grid-template-columns: 450px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.grid {
+  display: grid;
+}
+.login__card {
+  position: relative;
+  height: 75%;
+  background-color: #fff;
+  border: 2px solid #a64b24;
+  text-align: center;
+  line-height: 2rem;
+  padding: 2rem 0 4rem 0;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.login__box {
+  padding-top: 2rem;
+}
+.login__label__email {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+  left: -9rem;
+}
+.login__label__password {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+  left: -8rem;
+}
+.login__input {
+  display: inline-block;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+.back__button {
+  display: inline-block;
+  position: relative;
+  width: 9rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  background-color: #fff;
+  color: #a64b24;
+  border: 1px solid #a64b24;
+  padding: 0.2rem;
+  left: -1rem;
+  cursor: pointer;
+}
+.login__button {
+  display: inline-block;
+  position: relative;
+  width: 19rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  background-color: #a64b24;
+  color: #fff;
+  padding: 0.2rem;
+  border: 1px solid #a64b24;
+  cursor: pointer;
+}

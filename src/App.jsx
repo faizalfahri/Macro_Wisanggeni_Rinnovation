@@ -1,9 +1,11 @@
 import { Routes, Route, RouterProvider } from "react-router-dom";
 
+import NavbarComponent from "./components/client/Navbar/NavbarComponent";
+import FooterComponent from "./components/client/Footer/FooterComponent";
+
 import router from "./lib/router/router";
 
 function App() {
-<<<<<<< HEAD
   return (
     <div>
       <NavbarComponent />
@@ -28,9 +30,7 @@ function App() {
       <FooterComponent />
     </div>
   );
-=======
   return <RouterProvider router={router} />;
->>>>>>> 069a0974c02eea25a322c9429e07efc2c48b8056
 }
 
 export default App;
