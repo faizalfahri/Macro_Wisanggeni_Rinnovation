@@ -7,6 +7,10 @@ const Sidebar = () => {
       <Link clasName={styles.navLink} to="/pro/dashboard">
         <h3> Dashboard</h3>
       </Link>
+      <hr />
+      <Link clasName={styles.navLink} to="/pro">
+        <h4>Logout</h4>
+      </Link>
     </div>
   );
 };
