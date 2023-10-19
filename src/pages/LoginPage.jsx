@@ -30,7 +30,7 @@ const LoginPage = () => {
                         placeholder="Enter Your Email"
                       />
                     </div>
-                    <div className="login-box">
+                    <div class="login-box">
                       <label
                         for="password"
                         className="login-label-password fw-bold"
