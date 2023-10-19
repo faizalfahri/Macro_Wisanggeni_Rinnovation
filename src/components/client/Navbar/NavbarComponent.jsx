@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import {Navbar, Container, Nav} from "react-bootstrap";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const NavbarComponent = () => {
   const [changeColor, SetChangeColor] = useState(false);
@@ -20,6 +20,8 @@ const NavbarComponent = () => {
     window.addEventListener('scroll', ChangeBackgroundColor);
   })
 
+let navigate = useNavigate();
+
   return (
     <div>
       <Navbar expand="lg" bg="body-tertiary" className={changeColor ? "color-active" : ""}>
@@ -37,9 +39,12 @@ const NavbarComponent = () => {
               <NavLink to="/design" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""} end>
                 Popular Design
               </NavLink>
+              <NavLink to="/pro" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""} end>
+                Join Our Pro Network
+              </NavLink>
             </Nav>
             <div className="text-center">
-              <button className="btn">Sign in</button>
+              <button className="btn" onClick={() => navigate("/login")}>Sign in</button>
             </div>
           </Navbar.Collapse>
         </Container>

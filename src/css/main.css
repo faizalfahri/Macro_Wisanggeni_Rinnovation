@@ -58,6 +58,84 @@
 
 
 
+/* LOGIN AREA */
+.login-card{
+
+    margin-top: 15rem;
+}
+.login-container {
+    display: flex;
+    grid-template-columns: 450px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+.grid {
+    display: grid;
+}
+.login-card {
+    position: relative;
+    height: 75%;
+    background-color: var(--primary-color);
+    border: 2px solid #a64b24;
+    text-align: center;
+    line-height: 2rem;
+    padding: 2rem 0 4rem 0;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+.login-box {
+    padding-top: 2rem;
+}
+.login-label-email {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+    left: -9rem;
+}
+.login-label-password {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+    left: -8rem;
+}
+.login-input {
+    display: inline-block;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+/* .back-button {
+    display: inline-block;
+    position: relative;
+    width: 9rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: #fff;
+    color: #a64b24;
+    border: 1px solid #a64b24;
+    left: -1rem;
+    cursor: pointer;
+} */
+.login-button {
+    display: inline-block;
+    position: relative;
+    width: 9rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: var(--secondary-color);
+    color:white;
+    border: 1px solid #a64b24;
+    cursor: pointer;
+}
+/* LOGIN AREA */
+
+
+
+
+
 /* HEADER AREA */
 header {
   background: var(--primary-color)
@@ -166,7 +244,7 @@ header {
     background-color: var(--third-color);
 }
 .homepage .design h1 {
-    color: var(--color-text);
+    color: white;
 }
 .homepage .design .swiper {
     width: 100%;
