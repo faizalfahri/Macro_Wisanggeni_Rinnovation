@@ -1,24 +1,9 @@
-import {Routes, Route} from "react-router-dom";
+import { Routes, Route, RouterProvider } from "react-router-dom";
 
-import NavbarComponent from "./components/client/Navbar/NavbarComponent";
-import FooterComponent from "./components/client/Footer/FooterComponent";
-
-import HomePage from "./pages/HomePage"
-
-import MoreArticle from "./pages/MoreArticle";
-import MoreDesign from "./pages/MoreDesign";
-import MorePro from "./pages/MorePro";
-
-import ReadArticle from "./pages/ReadArticle";
-import ReadDesign from "./pages/ReadDesign";
-import ReadPro from "./pages/ReadPro";
-
-import ProNetwork from "./pages/pro/Landing/Landing"
-import LoginPage from "./pages/LoginPage"
-import RegisterPage from "./pages/RegisterPage"
-import SesudahLoginPage from "./pages/SesudahLoginPage"
+import router from "./lib/router/router";
 
 function App() {
+<<<<<<< HEAD
   return (
     <div>
       <NavbarComponent />
@@ -43,6 +28,9 @@ function App() {
       <FooterComponent />
     </div>
   );
+=======
+  return <RouterProvider router={router} />;
+>>>>>>> 069a0974c02eea25a322c9429e07efc2c48b8056
 }
 
 export default App;

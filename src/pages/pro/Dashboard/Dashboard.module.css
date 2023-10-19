@@ -1,0 +1,36 @@
+.layout {
+  display: flex;
+}
+.main {
+  padding: 1rem;
+}
+
+.chart {
+  border: 1px solid black;
+  width: 80vw;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.projectContainer {
+  width: 100%;
+  justify-content: space-around;
+  margin: 2rem 0rem;
+  display: flex;
+}
+.project {
+  padding: 1rem;
+  border: 1px solid black;
+  width: 25%;
+}
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.buttons button {
+  background-color: #a64b2a;
+  color: white;
+}

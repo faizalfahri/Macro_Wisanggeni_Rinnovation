@@ -1,13 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../../components/client/Layout/Layout";
 import { default as ProLayout } from "../../components/pro/Layout";
-import ArticlePage from "../../pages/ArticlePage";
-import FindProPage from "../../pages/FindProPage";
 import HomePage from "../../pages/HomePage";
-import PopularDesignPage from "../../pages/PopularDesignPage";
+import LoginPage from "../../pages/LoginPage";
+import MoreArticle from "../../pages/MoreArticle";
+import MoreDesign from "../../pages/MoreDesign";
+import MorePro from "../../pages/MorePro";
+import Dashboard from "../../pages/pro/Dashboard";
 import Landing from "../../pages/pro/Landing";
 import SignIn from "../../pages/pro/SignIn";
-
+import ReadArticle from "../../pages/ReadArticle";
+import ReadDesign from "../../pages/ReadDesign";
+import ReadPro from "../../pages/ReadPro";
+import RegisterPage from "../../pages/RegisterPage";
+import SesudahLoginPage from "../../pages/SesudahLoginPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,16 +24,40 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "article",
-        element: <ArticlePage />,
+        path: "morearticle",
+        element: <MoreArticle />,
       },
       {
-        path: "design",
-        element: <PopularDesignPage />,
+        path: "moredesign",
+        element: <MoreDesign />,
       },
       {
-        path: "findpro",
-        element: <FindProPage />,
+        path: "morepro",
+        element: <MorePro />,
+      },
+      {
+        path: "readarticle",
+        element: <ReadArticle />,
+      },
+      {
+        path: "readdesign",
+        element: <ReadDesign />,
+      },
+      {
+        path: "readpro",
+        element: <ReadPro />,
+      },
+      {
+        path: "login",
+        element: <LoginPage />,
+      },
+      {
+        path: "register",
+        element: <RegisterPage />,
+      },
+      {
+        path: "sesudah-login",
+        element: <SesudahLoginPage />,
       },
     ],
   },
@@ -42,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "sign-in",
         element: <SignIn />,
+      },
+      {
+        path: "dashboard",
+        element: <Dashboard />,
       },
     ],
   },
