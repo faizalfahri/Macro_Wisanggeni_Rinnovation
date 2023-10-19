@@ -4,7 +4,9 @@ import styles from "./Sidebar.module.css";
 const Sidebar = () => {
   return (
     <div className={styles.sidebar}>
-      <Link to="/pro/dashboard">Dashboard</Link>
+      <Link clasName={styles.navLink} to="/pro/dashboard">
+        <h3> Dashboard</h3>
+      </Link>
     </div>
   );
 };
