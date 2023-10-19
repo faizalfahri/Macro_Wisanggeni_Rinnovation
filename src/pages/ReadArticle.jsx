@@ -1,6 +1,8 @@
 import {readLink} from "../data/index";
+import { useNavigate } from "react-router-dom";
 
 const ReadArticle = () => {
+    let navigate = useNavigate();
     return (
         <div className="read-article">
             <div className="container-fluid d-flex justify-content-center search-header">
@@ -16,6 +18,10 @@ const ReadArticle = () => {
             </div>
 
             <article className="padding-solve">
+                <div className="button-end">
+                    <a onClick={() => navigate("/morearticle")}><button className="btn-back">Kembali</button></a>
+                </div>
+
                 <h1 className="mt-3">
                     Tips Mengurangi Pembengkakakan Biaya Renovasi Rumah
                 </h1>
@@ -31,7 +37,7 @@ const ReadArticle = () => {
                     {/* Row 1 */}
                     <div className="row">
                         {/* Col 1 */}
-                        <div className="col">
+                        <div className="col" onClick={() => navigate("/readarticle")}>
                             <div className="card">
                                 <img
                                     src="./src/assets/img-article/article1.jpg"
@@ -52,7 +58,7 @@ const ReadArticle = () => {
                             </div>
                         </div>
                         {/* Col 2 */}
-                        <div className="col">
+                        <div className="col" onClick={() => navigate("/readarticle")}>
                             <div className="card">
                                 <img
                                     src="./src/assets/img-article/article2.jpg"
@@ -71,7 +77,7 @@ const ReadArticle = () => {
                             </div>
                         </div>
                         {/* Col 3 */}
-                        <div className="col">
+                        <div className="col" onClick={() => navigate("/readarticle")}>
                             <div className="card">
                                 <img
                                     src="./src/assets/img-article/article3.jpg"

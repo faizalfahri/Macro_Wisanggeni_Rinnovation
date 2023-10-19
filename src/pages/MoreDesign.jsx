@@ -1,4 +1,3 @@
-import {readLink} from "../data/index";
 
 import { useNavigate } from "react-router-dom"
 

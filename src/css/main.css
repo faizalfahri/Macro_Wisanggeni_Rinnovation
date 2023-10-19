@@ -301,6 +301,7 @@ header {
 .button-search {
     height: 50px;
     width: 80px;
+    padding: 10px;
     border-radius: 15px;
     text-align: center;
     border: 0;
@@ -325,13 +326,13 @@ header {
     height: 190vh;
 }
 .read-article {
-    height:270vh;
+    height:240vh;
 }
 .read-design {
     height: 235vh;
 }
 .read-pro {
-    height: 300vh;
+    height: 320vh;
 }
 
 
@@ -349,6 +350,7 @@ article .button-tittle {
 .btn-menu {
     height: 40px;
     width: 120px;
+    padding: 3px;
     text-align: center;
     border: 0;
     background-color: #D5B793;
@@ -358,6 +360,7 @@ article .button-tittle {
 }
 .btn-back {
     height: 40px;
+    padding: 5px;
     width: 100px;
     text-align: center;
     border: 0;
@@ -390,7 +393,7 @@ article .button-tittle {
 
 /* More design */
 .button-end {
-    padding: 12px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -538,6 +541,17 @@ article .button-tittle {
 .paragraf-read-pro p {
     font-size: 20px;
     line-height: 45px;
+}
+.btn-choose-pro {
+    height: 40px;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    border: 0;
+    background-color: #A64B2A;
+    color: var(--navbar-color);
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 /* FOOTER AREA */

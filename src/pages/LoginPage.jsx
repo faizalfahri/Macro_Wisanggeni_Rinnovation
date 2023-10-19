@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 
 const LoginPage = () => {
-  return (
+return (
     <div className="login-page">
         <Container>
             <Row>
@@ -28,7 +28,7 @@ const LoginPage = () => {
                                 </div>
                                 <NavLink to="/sesudah-login" className="login-button rounded-5 fw-bold">Sign In</NavLink>
                                 <p className="pt-3">Don't Have an Account? <NavLink to="/register" className="login-signup">
-                                     Sign up
+                                    Sign up
                                 </NavLink>
                                 </p>
                             </form>

@@ -1,4 +1,3 @@
-import { readLink } from "../data/index";
 
 import { useNavigate } from "react-router-dom";
 
@@ -28,7 +27,7 @@ const MorePro = () => {
                     <div className="row">
 
                         {/* Col 1 */}
-                        <div className="col pro-card margin-right">
+                        <div className="col pro-card margin-right" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -43,7 +42,7 @@ const MorePro = () => {
                         </div>
 
                         {/* Col 2 */}
-                        <div className="col pro-card margin-right">
+                        <div className="col pro-card margin-right" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -58,7 +57,7 @@ const MorePro = () => {
                         </div>
 
                         {/* Col 3 */}
-                        <div className="col pro-card margin-right">
+                        <div className="col pro-card margin-right" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -73,7 +72,7 @@ const MorePro = () => {
                         </div>
 
                         {/* Col 4 */}
-                        <div className="col pro-card">
+                        <div className="col pro-card" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -93,7 +92,7 @@ const MorePro = () => {
                     <div className="row mt-5">
 
                         {/* Col 1 */}
-                        <div className="col pro-card margin-right">
+                        <div className="col pro-card margin-right" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -108,7 +107,7 @@ const MorePro = () => {
                         </div>
 
                         {/* Col 2 */}
-                        <div className="col pro-card margin-right">
+                        <div className="col pro-card margin-right" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -123,7 +122,7 @@ const MorePro = () => {
                         </div>
 
                         {/* Col 3 */}
-                        <div className="col pro-card margin-right">
+                        <div className="col pro-card margin-right" onClick={() => navigate("/readpro")}> 
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -138,7 +137,7 @@ const MorePro = () => {
                         </div>
 
                         {/* Col 4 */}
-                        <div className="col pro-card">
+                        <div className="col pro-card" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -158,7 +157,7 @@ const MorePro = () => {
                     <div className="row mt-5">
 
                         {/* Col 1 */}
-                        <div className="col pro-card margin-right">
+                        <div className="col pro-card margin-right" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -173,7 +172,7 @@ const MorePro = () => {
                         </div>
 
                         {/* Col 2 */}
-                        <div className="col pro-card margin-right">
+                        <div className="col pro-card margin-right" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -188,7 +187,7 @@ const MorePro = () => {
                         </div>
 
                         {/* Col 3 */}
-                        <div className="col pro-card margin-right">
+                        <div className="col pro-card margin-right" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
@@ -203,7 +202,7 @@ const MorePro = () => {
                         </div>
 
                         {/* Col 4 */}
-                        <div className="col pro-card">
+                        <div className="col pro-card" onClick={() => navigate("/readpro")}>
                             <div className="icons-pro">
                                 <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
                                 <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />

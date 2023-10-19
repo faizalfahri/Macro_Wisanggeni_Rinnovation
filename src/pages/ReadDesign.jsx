@@ -1,6 +1,8 @@
-// import {readLink} from "../data/index";
+import { useNavigate } from "react-router-dom";
+
 
 const ReadDesign = () => {
+    let navigate = useNavigate();
     return (
         <div className="read-design">
             <div className="container-fluid d-flex justify-content-center search-header">
@@ -16,6 +18,9 @@ const ReadDesign = () => {
             </div>
             
             <article className="container-fluid padding-solve">
+                <div className="button-end">
+                    <a onClick={() => navigate("/moredesign")}><button className="btn-back">Kembali</button></a>
+                </div>
 
                 <div className="read-design-box">
                     <img src="/src/assets/img-design/read-design.jpg" alt="image" className="read-image"/>
