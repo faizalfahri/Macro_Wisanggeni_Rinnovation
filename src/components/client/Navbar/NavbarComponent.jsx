@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
+import { NavLink, useNavigate } from "react-router-dom";
 import {navLinks} from "../../../data/index";
-import { NavLink } from "react-router-dom";
 
 const NavbarComponent = () => {
   const [changeColor, SetChangeColor] = useState(false);
@@ -20,6 +20,8 @@ const NavbarComponent = () => {
 
     window.addEventListener('scroll', ChangeBackgroundColor);
   })
+
+let navigate = useNavigate();
 
   return (
     <div>
@@ -41,7 +43,7 @@ const NavbarComponent = () => {
               })}
             </Nav>
             <div className="text-center">
-              <button className="btn">Sign in</button>
+              <button className="btn" onClick={() => navigate("/login")}>Sign in</button>
             </div>
           </Navbar.Collapse>
         </Container>

@@ -112,6 +112,66 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+      <div className="findpro py-5">
+        <Container>
+            <Row>
+                <Col>
+                    <h1 className="text-center fw-bold my-5">Find Pro</h1>
+                </Col>
+            </Row>
+            <Row>
+            {/* Col 1 */}
+            <div className="col pro-card margin-right shadow">
+                <div className="icons-pro">
+                    <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
+                    <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
+                </div>
+                <div className="image-pro">
+                    <img className="pro-1" src="/src/assets/img-pro/pro-1.jpg" alt="image" />
+                </div>
+                <div className="line-white"></div>
+                <p className="title-pro">
+                    Real Estate Group
+                </p>
+            </div>
+
+            {/* Col 2 */}
+            <div className="col pro-card margin-right shadow">
+                <div className="icons-pro">
+                    <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
+                    <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
+                </div>
+                <div className="image-pro">
+                    <img className="pro-1" src="/src/assets/img-pro/pro-2.png" alt="image" />
+                </div>
+                <div className="line-white"></div>
+                <p className="title-pro">
+                    Big Creek
+                </p>
+            </div>
+
+            {/* Col 3 */}
+            <div className="col pro-card margin-right shadow">
+                <div className="icons-pro">
+                    <img className="stars-icon" src="/src/assets/img-pro/stars-icon.png" alt="image" />
+                    <img className="love-icon" src="/src/assets/img-pro/love-icon.png" alt="image" />
+                </div>
+                <div className="image-pro">
+                    <img className="pro-1" src="/src/assets/img-pro/pro-3.jpg" alt="image" />
+                </div>
+                <div className="line-white"></div>
+                    <p className="title-pro">
+                        Andes Group
+                    </p>
+            </div>
+            </Row>
+            <Row>
+            <Col className="text-center mt-5">
+              <button className="btn btn-success rounded-5 btn-lg" onClick={() => navigate("/morepro")}>Find More Pro <i className="fa-solid fa-chevron-right ms-1"></i></button>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,10 @@
 import {readLink} from "../data/index";
 
+import { useNavigate } from "react-router-dom"
+
 
 const MoreDesign = () => {
+    let navigate = useNavigate();
     return (
         <div className="more-design">
             <div className="container-fluid d-flex justify-content-center search-header">
@@ -18,13 +21,13 @@ const MoreDesign = () => {
 
             <article className="container-fluid padding-solve">
                 <div className="button-end">
-                    <a href={readLink[1]}><button className="btn-back">Kembali</button></a>
+                    <a onClick={() => navigate("/")}><button className="btn-back">Kembali</button></a>
                 </div>
 
                 <div className="container">
                     {/* design hal 1 */}
                     <div className="row justify-content-between">
-                        <div className="col label-card margin-right">
+                        <div className="col label-card margin-right" onClick={() => navigate("/readdesign")}>
                             <img
                                 className="image-design"
                                 src="/src/assets/img-design/design-1.jpg"
@@ -35,7 +38,7 @@ const MoreDesign = () => {
                                 <p>Crafting Dream Homes, the American Way</p>
                             </div>
                         </div>
-                        <div className="col label-card">
+                        <div className="col label-card" onClick={() => navigate("/readdesign")}>
                             <img
                                 src="/src/assets/img-design/design-2.jpg"
                                 alt="image"
@@ -50,7 +53,7 @@ const MoreDesign = () => {
 
                     {/* design hal 2 */}
                     <div className="row justify-content-between">
-                        <div className="col label-card margin-right">
+                        <div className="col label-card margin-right" onClick={() => navigate("/readdesign")}>
                             <img
                                 className="image-design"
                                 src="/src/assets/img-design/design-3.jpg"
@@ -61,7 +64,7 @@ const MoreDesign = () => {
                                 <p>The Beauty of Korean Simplicity</p>
                             </div>
                         </div>
-                        <div className="col label-card">
+                        <div className="col label-card" onClick={() => navigate("/readdesign")}>
                             <img
                                 src="/src/assets/img-design/design-4.jpg"
                                 alt="image"
@@ -76,7 +79,7 @@ const MoreDesign = () => {
 
                     {/* design hal 3 */}
                     <div className="row justify-content-between">
-                        <div className="col label-card margin-right">
+                        <div className="col label-card margin-right" onClick={() => navigate("/readdesign")}>
                             <img
                                 className="image-design"
                                 src="/src/assets/img-design/design-5.jpg"
@@ -87,7 +90,7 @@ const MoreDesign = () => {
                                 <p>Classic Bathrooms, Modern Dreams</p>
                             </div>
                         </div>
-                        <div className="col label-card">
+                        <div className="col label-card" onClick={() => navigate("/readdesign")}>
                             <img
                                 src="/src/assets/img-design/design-6.jpg"
                                 alt="image"
@@ -102,7 +105,7 @@ const MoreDesign = () => {
 
                     {/* design hal 4 */}
                     <div className="row justify-content-between">
-                        <div className="col label-card margin-right">
+                        <div className="col label-card margin-right" onClick={() => navigate("/readdesign")}>
                             <img
                                 className="image-design"
                                 src="/src/assets/img-design/design-7.jpg"
@@ -113,7 +116,7 @@ const MoreDesign = () => {
                                 <p>Parking in Style, Living in Comfort.</p>
                             </div>
                         </div>
-                        <div className="col label-card">
+                        <div className="col label-card" onClick={() => navigate("/readdesign")}>
                             <img
                                 src="/src/assets/img-design/design-8.jpg"
                                 alt="image"
@@ -128,7 +131,7 @@ const MoreDesign = () => {
 
                     {/* design hal 5 */}
                     <div className="row justify-content-between">
-                        <div className="col label-card margin-right">
+                        <div className="col label-card margin-right" onClick={() => navigate("/readdesign")}>
                             <img
                                 className="image-design"
                                 src="/src/assets/img-design/design-9.jpg"
@@ -139,7 +142,7 @@ const MoreDesign = () => {
                                 <p>Sleeping in Style, Waking Up to Comfort</p>
                             </div>
                         </div>
-                        <div className="col label-card">
+                        <div className="col label-card" onClick={() => navigate("/readdesign")}>
                             <img
                                 src="/src/assets/img-design/design-10.jpg"
                                 alt="image"
@@ -154,7 +157,7 @@ const MoreDesign = () => {
 
                     {/* design hal 6 */}
                     <div className="row justify-content-between">
-                        <div className="col label-card margin-right">
+                        <div className="col label-card margin-right" onClick={() => navigate("/readdesign")}>
                             <img
                                 className="image-design"
                                 src="/src/assets/img-design/design-11.jpg"
@@ -165,7 +168,7 @@ const MoreDesign = () => {
                                 <p>Living in Harmony with Natures Design</p>
                             </div>
                         </div>
-                        <div className="col label-card">
+                        <div className="col label-card" onClick={() => navigate("/readdesign")}>
                             <img
                                 src="/src/assets/img-design/design-12.jpg"
                                 alt="image"

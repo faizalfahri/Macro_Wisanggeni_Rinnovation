@@ -1,6 +1,9 @@
 import { readLink } from "../data/index";
 
+import { useNavigate } from "react-router-dom";
+
 const MorePro = () => {
+    let navigate = useNavigate();
     return (
         <div className="more-pro">
             <div className="container-fluid d-flex justify-content-center search-header">
@@ -16,7 +19,7 @@ const MorePro = () => {
             </div>
             <article className="container-fluid padding-solve">
                 <div className="button-end">
-                    <a href={readLink[2]}><button className="btn-back">Kembali</button></a>
+                    <a onClick={() => navigate("/sesudah-login")}><button className="btn-back">Kembali</button></a>
                 </div>
 
 
