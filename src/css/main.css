@@ -133,6 +133,7 @@
     color:white;
     border: 1px solid #a64b24;
     cursor: pointer;
+    text-decoration: none;
 }
 /* LOGIN AREA */
 
@@ -306,6 +307,12 @@ header {
     background-color: #A64B2A;
     color: #ffffff;
 }
+
+/* FIND PRO */
+.homepage .findpro {
+    background-color: #f6f8fd
+}
+/* FIND PRO */
 
 /* Long Halaman */
 .more-article {

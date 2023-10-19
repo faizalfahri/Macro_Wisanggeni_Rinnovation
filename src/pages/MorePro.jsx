@@ -19,7 +19,7 @@ const MorePro = () => {
             </div>
             <article className="container-fluid padding-solve">
                 <div className="button-end">
-                    <a onClick={() => navigate("/")}><button className="btn-back">Kembali</button></a>
+                    <a onClick={() => navigate("/sesudah-login")}><button className="btn-back">Kembali</button></a>
                 </div>
 
 

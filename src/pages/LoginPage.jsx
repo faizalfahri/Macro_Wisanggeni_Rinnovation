@@ -17,16 +17,16 @@ const LoginPage = () => {
                                 <h2><b>Sign In</b></h2>
                             </div>
                 
-                            <form action="" className="login-form">
+                            <form className="login-form">
                                 <div className="login-box">
                                     <label for="email" className="login-label-email fw-bold">Email</label>
-                                    <input type="email" className="login-input" id="email" name="user-email" placeholder="Enter Your Email" />
+                                    <input type="email" className="login-input" placeholder="Enter Your Email" />
                                 </div>
                                 <div class="login-box">
                                     <label for="password" className="login-label-password fw-bold">Password</label>
-                                    <input type="password" className="login-input" id="password" name="user-password" placeholder="Enter Your Password" />
+                                    <input type="password" className="login-input" placeholder="Enter Your Password" />
                                 </div>
-                                <button className="login-button rounded-5 fw-bold" onClick={() => navigate("/sesudah-login")}>Sign in</button>
+                                <NavLink to="/sesudah-login" className="login-button rounded-5 fw-bold">Sign In</NavLink>
                                 <p className="pt-3">Don't Have an Account? <NavLink to="/register" className="login-signup">
                                      Sign up
                                 </NavLink>
