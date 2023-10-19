@@ -23,15 +23,22 @@ export const navLinks = [
   },
   {
     id: 2,
-    path: "article",
+    path: "morearticle",
     text: "Article",
   },
   {
     id: 3,
-    path: "design",
+    path: "moredesign",
     text: "Popular Design",
   },
+  {
+    id: 4,
+    path: "morepro",
+    text: "Join Our Pro Network",
+  },
 ];
+
+export const readLink = ['readarticle', 'readdesign', 'readpro'];
 
 export const semuaArticle = [
   {
