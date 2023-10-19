@@ -16,6 +16,7 @@ import ReadPro from "./pages/ReadPro";
 import ProNetwork from "./pages/pro/Landing/Landing"
 import LoginPage from "./pages/LoginPage"
 import RegisterPage from "./pages/RegisterPage"
+import SesudahLoginPage from "./pages/SesudahLoginPage"
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
 
         <Route path="/login" Component={LoginPage} />
         <Route path="/register" Component={RegisterPage} />
+        <Route path="/sesudah-login" Component={SesudahLoginPage} />
       </Routes>
 
       <FooterComponent />

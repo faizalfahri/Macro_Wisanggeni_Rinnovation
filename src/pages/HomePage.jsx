@@ -107,7 +107,7 @@ const HomePage = () => {
           </Row>
           <Row>
           <Col className="text-center">
-              <button className="btn btn-success rounded-5 btn-lg mt-4" onClick={() => navigate("/design")}>More Design<i className="fa-solid fa-chevron-right ms-1"></i></button>
+              <button className="btn btn-success rounded-5 btn-lg mt-4" onClick={() => navigate("/moredesign")}>More Design<i className="fa-solid fa-chevron-right ms-1"></i></button>
             </Col>
           </Row>
         </Container>

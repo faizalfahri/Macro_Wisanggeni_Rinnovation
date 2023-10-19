@@ -33,7 +33,7 @@ export const navLinks = [
   },
   {
     id: 4,
-    path: "morepro",
+    path: "pro",
     text: "Join Our Pro Network",
   },
 ];
