@@ -6,6 +6,7 @@ import LoginPage from "../../pages/LoginPage";
 import MoreArticle from "../../pages/MoreArticle";
 import MoreDesign from "../../pages/MoreDesign";
 import MorePro from "../../pages/MorePro";
+import Dashboard from "../../pages/pro/Dashboard";
 import Landing from "../../pages/pro/Landing";
 import SignIn from "../../pages/pro/SignIn";
 import ReadArticle from "../../pages/ReadArticle";
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "sign-in",
         element: <SignIn />,
+      },
+      {
+        path: "dashboard",
+        element: <Dashboard />,
       },
     ],
   },

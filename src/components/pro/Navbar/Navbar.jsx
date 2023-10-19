@@ -6,12 +6,12 @@ const Navbar = () => {
   return (
     <nav>
       <Link to={"/pro"}>
-        <h2 class={style.logo}>
+        <h2 className={style.logo}>
           Rinnovation<span>Partner</span>
         </h2>
       </Link>
       <ul>
-        {location.pathname !== "/dashboard" ? (
+        {location.pathname !== "/pro/dashboard" ? (
           <>
             <li>
               <Link to={"/"}>Back to Home</Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
               ""
             )}
             {location.pathname !== "/pro/sign-up" ? (
-              <li class={style.outline}>
+              <li className={style.outline}>
                 <Link to={"/pro/sign-up"}>Join Us</Link>
               </li>
             ) : (
