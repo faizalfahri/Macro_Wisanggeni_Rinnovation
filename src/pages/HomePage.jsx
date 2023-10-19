@@ -1,3 +1,5 @@
+import {readLink} from "../data/index";
+
 import {Container, Row, Col} from "react-bootstrap";
 import HeroImage from '../assets/img/hero.png';
 
@@ -48,7 +50,7 @@ const HomePage = () => {
                   <h5 className="mb-4 px-3">{article.title}</h5>
                   <p className="mb-4 px-3">{article.desc}</p>
                   <div className="ket d-flex justify-content-center py-3 mb-3">
-                    <button>{article.read}</button>
+                    <a href={readLink[0]}><button>{article.read}</button></a>
                   </div>
                 </Col>
               );
@@ -56,7 +58,7 @@ const HomePage = () => {
           </Row>
           <Row>
             <Col className="text-center">
-              <button className="btn btn-success rounded-5 btn-lg" onClick={() => navigate("/article")}>More Articles <i className="fa-solid fa-chevron-right ms-1"></i></button>
+              <button className="btn btn-success rounded-5 btn-lg" onClick={() => navigate("/morearticle")}>More Articles <i className="fa-solid fa-chevron-right ms-1"></i></button>
             </Col>
           </Row>
         </Container>

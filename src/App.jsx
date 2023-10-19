@@ -3,20 +3,30 @@ import {Routes, Route} from "react-router-dom";
 import NavbarComponent from "./components/client/Navbar/NavbarComponent";
 import FooterComponent from "./components/client/Footer/FooterComponent";
 
-import HomePage from "./pages/HomePage"
-import ArticlePage from "./pages/ArticlePage"
-import PopularDesignPage from "./pages/PopularDesignPage"
-import FindProPage from "./pages/FindProPage"
+import HomePage from "./pages/HomePage";
+
+import MoreArticle from "./pages/MoreArticle";
+import MoreDesign from "./pages/MoreDesign";
+import MorePro from "./pages/MorePro";
+
+import ReadArticle from "./pages/ReadArticle";
+import ReadDesign from "./pages/ReadDesign";
+import ReadPro from "./pages/ReadPro";
+
 function App() {
   return (
     <div>
       <NavbarComponent />
 
       <Routes>
-        <Route path="/" Component={HomePage}></Route>
-        <Route path="/article" Component={ArticlePage}></Route>
-        <Route path="/design" Component={PopularDesignPage}></Route>
-        <Route path="/findpro" Component={FindProPage}></Route>
+        <Route path="/" Component={HomePage} />
+        <Route path="/morearticle" Component={MoreArticle} />
+        <Route path="/moredesign" Component={MoreDesign} />
+        <Route path="/morepro" Component={MorePro} />
+
+        <Route path="/readarticle" Component={ReadArticle} />
+        <Route path="/readdesign" Component={ReadDesign} />
+        <Route path="/readpro" Component={ReadPro} />
       </Routes>
 
       <FooterComponent />
