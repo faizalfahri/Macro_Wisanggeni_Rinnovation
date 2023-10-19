@@ -20,6 +20,7 @@ function App() {
 
       <Routes>
         <Route path="/" Component={HomePage} />
+        
         <Route path="/morearticle" Component={MoreArticle} />
         <Route path="/moredesign" Component={MoreDesign} />
         <Route path="/morepro" Component={MorePro} />
